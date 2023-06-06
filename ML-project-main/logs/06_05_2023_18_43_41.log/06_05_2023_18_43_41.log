@@ -1,0 +1,23 @@
+[ 2023-06-05 18:43:43,507 ] 36 root - INFO - Entered the data ingestion method or component
+[ 2023-06-05 18:43:43,510 ] 39 root - INFO - Read the dataset as dataframe
+[ 2023-06-05 18:43:43,515 ] 44 root - INFO - Train test split initiated
+[ 2023-06-05 18:43:43,522 ] 51 root - INFO - Inmgestion of the data iss completed
+[ 2023-06-05 18:43:43,522 ] 64 root - INFO - Done DataInjection in main
+[ 2023-06-05 18:43:43,524 ] 85 root - INFO - Read train and test data completed
+[ 2023-06-05 18:43:43,524 ] 87 root - INFO - Obtaining preprocessing object
+[ 2023-06-05 18:43:43,526 ] 61 root - INFO - Categorical columns: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[ 2023-06-05 18:43:43,526 ] 62 root - INFO - Numerical columns: ['writing_score', 'reading_score']
+[ 2023-06-05 18:43:43,526 ] 61 root - INFO - Categorical columns: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[ 2023-06-05 18:43:43,526 ] 62 root - INFO - Numerical columns: ['reading_score', 'math_score']
+[ 2023-06-05 18:43:43,526 ] 61 root - INFO - Categorical columns: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[ 2023-06-05 18:43:43,526 ] 62 root - INFO - Numerical columns: ['writing_score', 'math_score']
+[ 2023-06-05 18:43:43,526 ] 92 root - INFO - Done Preprocessing for all 3
+[ 2023-06-05 18:43:43,528 ] 120 root - INFO - Applying preprocessing object on training dataframe and testing dataframe. 121
+[ 2023-06-05 18:43:43,550 ] 147 root - INFO - Saved preprocessing object.
+[ 2023-06-05 18:43:43,554 ] 67 root - INFO - Done Data transformation in main
+[ 2023-06-05 18:43:43,554 ] 33 root - INFO - Split training and test input data
+[ 2023-06-05 18:44:34,646 ] 102 root - INFO - Best found model on both training and testing dataset
+[ 2023-06-05 18:44:34,651 ] 33 root - INFO - Split training and test input data
+[ 2023-06-05 18:45:31,661 ] 102 root - INFO - Best found model on both training and testing dataset
+[ 2023-06-05 18:45:31,691 ] 33 root - INFO - Split training and test input data
+[ 2023-06-05 18:46:35,345 ] 102 root - INFO - Best found model on both training and testing dataset

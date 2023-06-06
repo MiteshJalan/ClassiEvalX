@@ -1,0 +1,17 @@
+[ 2023-06-05 18:17:12,354 ] 29 root - INFO - Entered the data ingestion method or component
+[ 2023-06-05 18:17:12,357 ] 32 root - INFO - Read the dataset as dataframe
+[ 2023-06-05 18:17:12,362 ] 37 root - INFO - Train test split initiated
+[ 2023-06-05 18:17:12,370 ] 44 root - INFO - Inmgestion of the data iss completed
+[ 2023-06-05 18:17:12,370 ] 57 root - INFO - Done DataInjection in main
+[ 2023-06-05 18:17:12,373 ] 85 root - INFO - Read train and test data completed
+[ 2023-06-05 18:17:12,373 ] 87 root - INFO - Obtaining preprocessing object
+[ 2023-06-05 18:17:12,373 ] 61 root - INFO - Categorical columns: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[ 2023-06-05 18:17:12,384 ] 62 root - INFO - Numerical columns: ['writing_score', 'reading_score']
+[ 2023-06-05 18:17:12,384 ] 61 root - INFO - Categorical columns: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[ 2023-06-05 18:17:12,384 ] 62 root - INFO - Numerical columns: ['reading_score', 'math_score']
+[ 2023-06-05 18:17:12,384 ] 61 root - INFO - Categorical columns: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[ 2023-06-05 18:17:12,384 ] 62 root - INFO - Numerical columns: ['writing_score', 'math_score']
+[ 2023-06-05 18:17:12,384 ] 92 root - INFO - Done Preprocessing for all 3
+[ 2023-06-05 18:17:12,386 ] 120 root - INFO - Applying preprocessing object on training dataframe and testing dataframe. 121
+[ 2023-06-05 18:17:12,411 ] 147 root - INFO - Saved preprocessing object.
+[ 2023-06-05 18:17:12,416 ] 60 root - INFO - Done Data transformation in main

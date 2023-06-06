@@ -1,0 +1,27 @@
+[ 2023-06-05 23:26:47,565 ] 186 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.24.18.248:5000
+[ 2023-06-05 23:26:47,566 ] 186 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2023-06-05 23:26:54,853 ] 186 werkzeug - INFO - 127.0.0.1 - - [05/Jun/2023 23:26:54] "GET / HTTP/1.1" 200 -
+[ 2023-06-05 23:26:56,321 ] 186 werkzeug - INFO - 127.0.0.1 - - [05/Jun/2023 23:26:56] "[32mGET /to_p3 HTTP/1.1[0m" 302 -
+[ 2023-06-05 23:26:56,340 ] 186 werkzeug - INFO - 127.0.0.1 - - [05/Jun/2023 23:26:56] "GET /predictdatawriting HTTP/1.1" 200 -
+[ 2023-06-05 23:27:19,647 ] 1414 application - ERROR - Exception on /predictdatawriting [POST]
+Traceback (most recent call last):
+  File "C:\Users\msjalan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\msjalan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\msjalan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\msjalan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\msjalan\Documents\+\ML-project-main\ML-project-main\application.py", line 92, in predict_datapoint_writing
+    writing_score=float(request.form.get('writing_score'))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+[ 2023-06-05 23:27:19,653 ] 186 werkzeug - INFO - 127.0.0.1 - - [05/Jun/2023 23:27:19] "[35m[1mPOST /predictdatawriting HTTP/1.1[0m" 500 -

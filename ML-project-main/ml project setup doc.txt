@@ -1,0 +1,88 @@
+1111111111111111111111111111111111111111111111111111
+------------------------
+conda create -p venv python==3.8 -y
+
+conda activate venv/
+-----------------------------
+-----------------------------
+git init
+#Add readme.md in pc
+git add README.md
+git commit -m "first commit"
+---------------------------------
+if not able to do { Add global userid $ git config --global user.name "mitesh jalan"
+$ git config --global user.email mj@example.com}
+-----------------------------------
+git remote -v {check link}
+git push -u origin main {to commit}
+git status {check status}
+create gitignore on github {add file > create new file > .gitignore > type python> unnessecery file removed}
+git pull {to update on pc side}
+_____________________________________
+SETUP.py
+Requirement.txt
+-----------------------------------
+pip install -r requirements.txt
+git add . {add new files}
+git commit -m "Setup"  
+git push -u origin main
+-------------------------------------
+222222222222222222222222222222222222222222222222222222222222222222
+--------------------------------------------
+{Everything comes under src __init__ 
+so now we create new file in src:}
+-----------------------------------
+	in src: 
+
+folder components { 1st thing in folder is __init__.py 
+{ these are modules like data injection (reading data)}
+{Data_transformation onehot,labling etc}
+{model trainer.py ---all trainging diff model, confusion matrix, rsq values}
+{also can make model pusher.py push pickle file to cloud}
+
+folder Pipeline{ what kind of pipeline}{2 type training testing}
+{create training_piprline.py -- try to trigger components from here}
+{predict_pipeline.py --predict)
+{__init__.py import this files)
+
+
+logger.py: for keepung log
+exception.py: for exception
+utils.py: common funtionality like read data from database 
+
+333333333333333333333333333333333333333333333333333333333333333333
+import logging in exception.py
+{it will then only add info to logging files}
+
+make notebook folder which will have dataset and jupyter notebook 
+
+-----------------------------------------
+to install sklearn
+go to requirements.txt > comment .e to avoid making packages again > type sklearn > run pip install -r requirements.txt
+
+
+if we have 2 categories in a feature use : one hot encoding
+if we have more than 2 use target guided ordinal encoding
+
+
+once encoding do 
+pipeline implementation
+ 
+once we perform everything in jupyter notebook 
+impolement it in modular way in diffrent files like data ingestuon etc.
+4444444444444444444444444444444444444444444444444444444444444444
+{will work with data ingestion}
+import logging n exception in data ingetion file.
+import dataclasses.
+{we take class dataIngestionConfig to get input}
+{@==declarator }
+
+utils will have common funtion to be used in whole project.
+{using dill .dump to create pickle file.
+
+so data_transformation_config gives path of i/p dir and output
+555555555555555555555555555555555555555555555555555555555555555555555
+{working with model training}
+
+load obj file for preprocessing and prediction
+we pass value as dictionary > dataframe to model to predict so use another function to convert data to dataframe.
