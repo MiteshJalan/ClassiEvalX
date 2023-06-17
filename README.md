@@ -22,7 +22,7 @@ The Student Grade Prediction System is a machine learning-based project that pre
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/student-grade-prediction.git
+   git clone https://github.com/MiteshJalan/Grade_Prediction_with_deployment
    ```
 
 2. Navigate to the project directory:
