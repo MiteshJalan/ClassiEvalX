@@ -1,4 +1,4 @@
-# Grade_Prediction_with_deployment
+# ClassiEvalX
 Go to :
 https://grade-prediction-platform.onrender.com
 
